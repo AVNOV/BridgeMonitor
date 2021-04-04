@@ -8,17 +8,38 @@ namespace BridgeMonitor.Models
 {
     public class Boats
     {
-        public List<Boat> _boatsInfo;
-        public Boat _NextClosingInfo { get; set; }
-        public DateTime _actual = DateTime.Today;
+        public List<Boat> _boatsInfo { get; set; }
+        public DateTime _actual;
+        public Boat _NextClosing;
 
-        public Boats() {
-            _boatsInfo = new List<Boat>(GetBoatsFromApi());
-            _NextClosingInfo = SetEventInfo(_boatsInfo, _actual);
-            _NextClosingInfo._jamRisks = (ComputeJamRisks(_NextClosingInfo._closingDate, _NextClosingInfo._blockDuree) == 0) ? "Faible." : "Elevée.";
+        public Boats () {
+            _actual = DateTime.Today;
+            _boatsInfo = FormatBoatsFromApi();
+            _NextClosing = FindNextClosing(_boatsInfo, _actual);
+            
+            foreach (var item in _boatsInfo)
+            {
+                item._blockDuree = GetBlockDuree(item);
+                item._jamRisks = (GetJamRisks(item._closingDate, item._blockDuree) == 0) ? "Faible" : "Elevée";
+            }
         }
 
-        public static int ComputeJamRisks(DateTime closingTime, TimeSpan duree) {
+        private static Boat FindNextClosing(List<Boat> allBoats, DateTime now) {
+            Boat res = new Boat();
+
+            res._closingDate = new DateTime(9999, 1, 1);
+            foreach (Boat item in allBoats) {
+                if (now < item._closingDate && res._closingDate > item._closingDate)
+                    res = item;
+            }
+            return res;
+        }
+
+        private static TimeSpan GetBlockDuree(Boat item) {
+            return (item._reopeningDate - item._closingDate);
+        }
+
+        public static int GetJamRisks(DateTime closingTime, TimeSpan duree) {
             closingTime.ToString(CultureInfo.CreateSpecificCulture("fr-FR"));
             int check = (closingTime.Hour + (int)duree.TotalHours);
             int morningLimit = ((int)duree.TotalHours + 9);
@@ -29,20 +50,9 @@ namespace BridgeMonitor.Models
             else
                 return 1;
         }
-            
-        public static Boat SetEventInfo(List<Boat> _boatInfo, DateTime _actual) {
-            Boat nextOne = new Boat();
 
-            nextOne._closingDate = new DateTime(9999, 1, 1);
-            foreach (Boat item in _boatInfo) {
-                if (_actual < item._closingDate && nextOne._closingDate > item._closingDate)
-                    nextOne = item;
-            }
-            nextOne._blockDuree = nextOne._reopeningDate - nextOne._closingDate;
-            return nextOne;
-        }
-
-        private static List<Boat> GetBoatsFromApi() {
+        private static List<Boat> FormatBoatsFromApi() {
+        //    List<Boat> res;
         //Création un HttpClient (= outil qui va permettre d'interroger une URl via une requête HTTP)
             using (var client = new HttpClient()) {
                 var response = client.GetAsync("https://api.alexandredubois.com/pont-chaban/api.php");

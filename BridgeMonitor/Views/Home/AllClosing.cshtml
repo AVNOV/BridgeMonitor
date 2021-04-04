@@ -1,24 +1,54 @@
-@model Boats
+@model List<Boat>;
 @using System.Globalization
 @{
+    var cultureFr = new CultureInfo("fr-FR");
     ViewData["Title"] = "Toutes les fermetures";
 }
 <h1>@ViewData["Title"]</h1>
 
-<h5><strong>Tableau des fermetures du pont chaban delmas</strong></h5>
 
+<h3>Fermetures à venir :</h3>
 <table class="table">
-   <tr>
-       @foreach (var boat in @Model._boatsInfo)
-       {
-           <p>_________________________________________________________________________________________________________________________</p>
-           <p><strong>|@boat._boatName || @boat._closingDate.ToString(CultureInfo.CreateSpecificCulture("fr-FR")) || @boat._blockDuree |</strong><br></p>
+    <thead>
+        <tr>
+            <th>Bateau concerné :</th>
+            <th>Prochaine fermeture :</th>
+            <th>Durée de la fermeture :</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+                if (item._closingDate >= DateTime.Today) {
+                    <tr>
+                        <td>@item._boatName</td>
+                        <td>@item._closingDate.ToString("dddd d MMMM, hh:mm", cultureFr)</td>
+                        <td>@item._blockDuree heures</td>
+                    </tr>
+                }
+            }
+    </tbody>
+</table>
 
-       }
-   </tr>
-   <tr>
-       <td>Michelle</td>
-       <td>26 ans</td>
-       <td>États-Unis</td>
-   </tr>
+<h3>Fermetures passées :</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Bateau concerné :</th>
+            <th>Prochaine fermeture :</th>
+            <th>Durée de la fermeture :</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+                if (item._closingDate < DateTime.Today) {
+                    <tr>
+                        <td>@item._boatName</td>
+                        <td>@item._closingDate.ToString("dddd d MMMM, hh:mm", cultureFr)</td>
+                        <td>@item._blockDuree heures</td>
+                    </tr>
+                }
+            }
+    </tbody>
 </table>

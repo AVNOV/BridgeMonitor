@@ -38,4 +38,45 @@ C:\Users\35Master\Desktop\POO ARCHI\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0
 C:\Users\35Master\Desktop\POO ARCHI\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.genruntimeconfig.cache
 C:\Users\35Master\Desktop\POO ARCHI\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.csproj.CopyComplete
 C:\Users\35Master\Desktop\POO ARCHI\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\appsettings.json
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.exe
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.deps.json
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.runtimeconfig.json
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.runtimeconfig.dev.json
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\ref\BridgeMonitor.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.pdb
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.Views.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\BridgeMonitor.Views.pdb
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.csprojAssemblyReference.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.AssemblyInfoInputs.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.AssemblyInfo.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.csproj.CoreCompileInputs.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.RazorAssemblyInfo.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.RazorAssemblyInfo.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\staticwebassets\BridgeMonitor.StaticWebAssets.Manifest.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\staticwebassets\BridgeMonitor.StaticWebAssets.xml
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\scopedcss\bundle\BridgeMonitor.styles.css
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.TagHelpers.input.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.TagHelpers.output.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.RazorCoreGenerate.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.RazorTargetAssemblyInfo.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.RazorTargetAssemblyInfo.cs
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.Views.pdb
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.csproj.CopyComplete
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\ref\BridgeMonitor.dll
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.pdb
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\BridgeMonitor.genruntimeconfig.cache
+C:\Users\35Master\Desktop\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\Home\AllClosing.cshtml.g.cs
 C:\Users\35Master\Desktop\POO ARCHI\BridgeMonitor\BridgeMonitor\obj\Debug\net5.0\Razor\Views\Home\AllClosing.cshtml.g.cs

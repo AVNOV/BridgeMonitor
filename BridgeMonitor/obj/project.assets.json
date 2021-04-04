@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\35Master\\Desktop\\POO ARCHI\\BridgeMonitor\\BridgeMonitor\\BridgeMonitor.csproj",
+      "projectUniqueName": "C:\\Users\\35Master\\Desktop\\POO ARCHI\\BridgeMonitor\\BridgeMonitor\\BridgeMonitor.csproj",
       "projectName": "BridgeMonitor",
-      "projectPath": "c:\\Users\\35Master\\Desktop\\POO ARCHI\\BridgeMonitor\\BridgeMonitor\\BridgeMonitor.csproj",
+      "projectPath": "C:\\Users\\35Master\\Desktop\\POO ARCHI\\BridgeMonitor\\BridgeMonitor\\BridgeMonitor.csproj",
       "packagesPath": "C:\\Users\\35Master\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\35Master\\Desktop\\POO ARCHI\\BridgeMonitor\\BridgeMonitor\\obj\\",
+      "outputPath": "C:\\Users\\35Master\\Desktop\\POO ARCHI\\BridgeMonitor\\BridgeMonitor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\35Master\\AppData\\Roaming\\NuGet\\NuGet.Config",

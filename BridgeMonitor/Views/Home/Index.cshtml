@@ -9,13 +9,20 @@
 <table class="table">
     <thead>
         <tr>
-            <td>Prochaine fermeture: <strong>@Model._closingDate.ToString("dddd d MMMM, hh:mm", cultureFr).</strong></th>
-            <td>Prochaine réouverture: <strong>@Model._reopeningDate.ToString("dddd d MMMM, hh:mm", cultureFr).</strong></th>
-            <td>Bateau concerné: <strong>@Model._boatName.<strong></td>
-            <td>Durée de la fermeture: <strong>@Model._blockDuree heures.<strong></td>
-            <td>Risque de bouchon: <strong>@Model._jamRisks<strong></td>
+            <th>Prochaine fermeture :</th>
+            <th>Prochaine réouverture :</th>
+            <th>Bateau concerné :</th>
+            <th>Durée de la fermeture :</th>
+            <th>Rique de bouchon :</th>
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>@Model._closingDate.ToString("dddd d MMMM, hh:mm", cultureFr)</td>
+            <td>@Model._reopeningDate.ToString("dddd d MMMM, hh:mm", cultureFr)</td>
+            <td>@Model._boatName</td>
+            <td>@Model._blockDuree heures</td>
+            <td>@Model._jamRisks</td>
+        </tr>
     </tbody>
 </table>

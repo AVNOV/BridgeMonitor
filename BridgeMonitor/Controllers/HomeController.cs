@@ -12,7 +12,7 @@ namespace BridgeMonitor.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        public Boats boats = new Boats();
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -20,14 +20,19 @@ namespace BridgeMonitor.Controllers
 
         public IActionResult Index()
         {
-            var boats = new Boats();
             return View(boats._NextClosing);
         }
 
         public IActionResult AllClosing()
         {
-            var boats = new Boats();
             return View(boats._boatsInfo);
+        }
+
+        [HttpGet]
+        [Route("/Home/Details/{Id}")]
+        public IActionResult Details(int id)
+        {
+            return View(boats._boatsInfo[id]);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -35,6 +40,7 @@ namespace BridgeMonitor.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
         private static List<Boat> GetBoatsFromApi()
         {
             //Création un HttpClient (= outil qui va permettre d'interroger une URl via une requête HTTP)

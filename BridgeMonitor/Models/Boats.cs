@@ -52,8 +52,6 @@ namespace BridgeMonitor.Models
         }
 
         private static List<Boat> FormatBoatsFromApi() {
-        //    List<Boat> res;
-        //Création un HttpClient (= outil qui va permettre d'interroger une URl via une requête HTTP)
             using (var client = new HttpClient()) {
                 var response = client.GetAsync("https://api.alexandredubois.com/pont-chaban/api.php");
                 var stringResult = response.Result.Content.ReadAsStringAsync();

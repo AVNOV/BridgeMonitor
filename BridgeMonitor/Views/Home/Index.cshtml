@@ -1,25 +1,21 @@
-﻿@model List<Boat>
+﻿@model Boat;
+@using System.Globalization
+@{
+    var cultureFr = new CultureInfo("fr-FR");
+}
 
-<h1>Liste des bateau</h1>
+<h1>Prochaine Fermeture</h1>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Nom du bateau</th>
-            <th>Type de fermeture</th>
-            <th>Date de fermeture</th>
-            <th>Date de réouverture</th>
+            <td>Prochaine fermeture: <strong>@Model._closingDate.ToString("dddd d MMMM, hh:mm", cultureFr).</strong></th>
+            <td>Prochaine réouverture: <strong>@Model._reopeningDate.ToString("dddd d MMMM, hh:mm", cultureFr).</strong></th>
+            <td>Bateau concerné: <strong>@Model._boatName.<strong></td>
+            <td>Durée de la fermeture: <strong>@Model._blockDuree heures.<strong></td>
+            <td>Risque de bouchon: <strong>@Model._jamRisks<strong></td>
         </tr>
     </thead>
     <tbody>
-        @foreach (var boat in Model)
-        {
-            <tr>
-                <td>@boat.boatName</td>
-                <td>@boat.closingType</td>
-                <td>@boat.closingDate</td>
-                <td>@boat.reopeningDate</td>
-            </tr>
-        }
     </tbody>
 </table>

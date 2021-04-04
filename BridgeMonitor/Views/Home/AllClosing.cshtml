@@ -1,0 +1,24 @@
+@model Boats
+@using System.Globalization
+@{
+    ViewData["Title"] = "Toutes les fermetures";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h5><strong>Tableau des fermetures du pont chaban delmas</strong></h5>
+
+<table class="table">
+   <tr>
+       @foreach (var boat in @Model._boatsInfo)
+       {
+           <p>_________________________________________________________________________________________________________________________</p>
+           <p><strong>|@boat._boatName || @boat._closingDate.ToString(CultureInfo.CreateSpecificCulture("fr-FR")) || @boat._blockDuree |</strong><br></p>
+
+       }
+   </tr>
+   <tr>
+       <td>Michelle</td>
+       <td>26 ans</td>
+       <td>États-Unis</td>
+   </tr>
+</table>
